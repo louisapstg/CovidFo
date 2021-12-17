@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/light_black"
+    tools:context=".Pembayaran"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:text="Masukkan Alamat"
+                android:textColor="@color/orange"/>
+
+            <EditText
+                android:id="@+id/alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="#808080"
+                android:ems="10"
+                android:hint="Alamat"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey"
+                android:layout_marginBottom="20dp"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:text="Pilih Metode Pengiriman"
+                android:textColor="@color/orange"/>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp">
+                <RadioButton android:id="@+id/radio_ninja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ninja Xpress"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"/>
+                <RadioButton android:id="@+id/radio_jne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="JNE Express"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"/>
+                <RadioButton android:id="@+id/radio_sicepat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sicepat"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"/>
+                <RadioButton android:id="@+id/radio_gosend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gosend"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"/>
+                <RadioButton android:id="@+id/radio_pos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pos Indonesia"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:text="Pilih Metode Pembayaran"
+                android:textColor="@color/orange"/>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="20dp">
+                <RadioButton android:id="@+id/radio_bca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BCA"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"/>
+                <RadioButton android:id="@+id/radio_bni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BNI"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"/>
+                <RadioButton android:id="@+id/radio_mandiri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mandiri"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"/>
+                <RadioButton android:id="@+id/radio_gopay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gopay"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"/>
+                <RadioButton android:id="@+id/radio_indomaret"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Indomaret"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnBayar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/orange"
+                android:text="Checkout"
+                android:textColor="@color/light_black"
+                android:onClick="goToSukses"
+                android:layout_margin="30dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

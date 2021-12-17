@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Covidfo</string>
+    <string name="about_text">Covidfo adalah aplikasi yang menawarkan berbagai macam masker dengan
+        bahan dan kualitas tiada duanya. Covidfo menawarkan masker yang sudah punya sertifikat
+        terbaik dan sudah diakui oleh 193 negara.</string>
+    <string name="sponsor_name">Sponsored By :</string>
+    <string name="berhasil">Berhasil!</string>
+    <string name="kembali">Kembali Ke Menu</string>
+    <string name="list_masker">List Masker</string>
+    <string name="belum_terdaftar">Belum Terdaftar?</string>
+    <string name="daftar">Daftar</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="konfirmasi_password">Konfirmasi Password</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="pembayaran">Pembayaran</string>
+    <string name="riwayat_pembelian">Riwayat Pembelian</string>
+    <string name="donasi">Donasi</string>
+    <string name="pengaturan_akun">Pengaturan Akun</string>
+</resources>

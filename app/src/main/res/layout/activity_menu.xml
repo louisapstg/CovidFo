@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/light_black"
+    tools:context=".Menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="main Menu"
+            android:textColor="@color/orange"
+            android:textSize="30dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:padding="50dp"/>
+
+        <Button
+            android:id="@+id/btnMasker"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="@color/orange"
+            android:text="@string/list_masker"
+            android:textSize="20sp"
+            android:textColor="@color/light_black"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnDonasi"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="@color/orange"
+            android:text="@string/donasi"
+            android:textSize="20sp"
+            android:textColor="@color/light_black"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnAkun"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="@color/orange"
+            android:text="@string/pengaturan_akun"
+            android:textSize="20sp"
+            android:textColor="@color/light_black"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

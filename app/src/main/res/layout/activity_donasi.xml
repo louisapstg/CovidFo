@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Donasi"
+    android:background="@color/light_black"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:text="Masukkan Donasi Anda"
+                android:textColor="@color/orange"/>
+
+            <EditText
+                android:id="@+id/donasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="#808080"
+                android:ems="10"
+                android:hint="Donasi"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey"
+                android:layout_marginBottom="20dp"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:text="Pilih Metode Pembayaran"
+                android:textColor="@color/orange"/>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="20dp">
+                <RadioButton android:id="@+id/radio_bca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BCA"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"/>
+                <RadioButton android:id="@+id/radio_bni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BNI"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"/>
+                <RadioButton android:id="@+id/radio_mandiri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mandiri"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"/>
+                <RadioButton android:id="@+id/radio_gopay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gopay"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"/>
+                <RadioButton android:id="@+id/radio_indomaret"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Indomaret"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnBayar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:background="@color/orange"
+                android:text="Donasi"
+                android:textColor="@color/light_black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Anda juga bisa donasi ke mitra kami :"
+                android:textColor="@color/orange"
+                android:textSize="15dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:padding="50dp"/>
+
+            <ImageButton
+                android:id="@+id/image1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="30dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:background="@color/orange"
+                android:onClick="openWebURL"/>
+
+            <ImageButton
+                android:id="@+id/image2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="30dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:background="@color/orange"
+                android:onClick="openWebURL"/>
+
+            <ImageButton
+                android:id="@+id/image3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="30dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:background="@color/orange"
+                android:padding="20dp"
+                android:onClick="openWebURL"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
